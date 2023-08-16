@@ -6,11 +6,17 @@ import axios from 'axios'
 
 const PositiveNegative = () => {
 
+  const headers = {
+    'Access-Control-Allow-Origin': '*',
+                  'Access-Control-Allow-Headers': '*',
+                  'Access-Control-Allow-Credentials': 'true'
+};
+
   const [formData , setFormData] = useState({title : '', question: '', questionDesc : '', questionPic : null , option1Title: '', option1Input:null, option2Title: '', option2Input: null})
 
   const handleSubmit = () => {
-    const url = "https://spandan-q72ewn80g-ketankapale8.vercel.app/api/v1/addpositivenegative"
-    axios.post(url , formData)
+    const url = "https://localhost:5000/api/v1/addpositivenegative"
+    axios.post(url , formData  )
     
 
   }
