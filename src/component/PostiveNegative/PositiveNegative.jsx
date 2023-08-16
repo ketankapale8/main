@@ -11,6 +11,7 @@ const PositiveNegative = () => {
   const handleSubmit = () => {
     const url = "https://spandan-q72ewn80g-ketankapale8.vercel.app/api/v1/addpositivenegative"
     axios.post(url , formData)
+    
 
   }
 
