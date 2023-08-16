@@ -8,8 +8,17 @@ const Nadi = () => {
 
   const [formData , setFormData] = useState({title : '', question: '', questionDesc : '', questionPic : null , option1Title: '', option1Input:null, option2Title: '', option2Input: null , option3Title: '', option3Input: null  })
 
-  const handleSubmit = () => {
-    const url = "https://spandan-q72ewn80g-ketankapale8.vercel.app/api/v1/addnadi"
+  const handleSubmit = async () => {
+    const url = "https://spandan-git-main-ketankapale8.vercel.app/api/v1/addnadi"
+    //  await fetch(url,{
+    //   method: 'POST',
+    //   body: JSON.stringify(formData),
+    //   headers: {
+    //     'Access-Control-Allow-Origin': '*',
+    //     'Content-Type': 'application/json',
+    // },
+    // withCredentials: true
+    // })
     axios.post(url , formData)
 
   }
@@ -60,7 +69,7 @@ const Nadi = () => {
 
    return (
     <div className='form'>
-      <h2>Positive Negative</h2>
+      <h2>Nadi</h2>
 
       <div className="title">Heading</div>
       <textarea onChange={(e)=> setFormData({...formData  , title : e.target.value})}/>
