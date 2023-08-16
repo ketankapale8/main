@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter as Router , Routes  , Route} from 'react-router-dom'
+import Home from './component/Home/Home';
+import PositiveNegative from './component/PostiveNegative/PositiveNegative';
+import Nadi from './component/Nadi/Nadi';
+import Vaastu from './component/Vaastu/Vaastu';
+import BodyParts from './component/BodyParts/BodyParts';
+import Diseases from './component/Diseases/Dieases';
+import Chakra from './component/Chakra/Chakra';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Routes>
+          <Route path='/' element={<Home/>} exact/>
+          <Route path='/positive-negative' element={<PositiveNegative/>} />
+          <Route path='/nadi' element={<Nadi/>} />
+          <Route path='/vaastu' element={<Vaastu/>} />
+          <Route path='/bodyparts' element={<BodyParts/>} />
+          <Route path='/diseases' element={<Diseases/>} />
+          <Route path='/chakra' element={<Chakra/>} />
+
+
+
+
+
+
+        </Routes>
+      </Router>
     </div>
   );
 }

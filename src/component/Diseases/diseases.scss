@@ -1,0 +1,83 @@
+.form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .title{
+        font-size: 1.5rem;
+    }
+
+
+
+    textarea{
+       width: 450px;
+       height: 70px;
+       max-width: 470px;
+       max-height: 70px;
+       border: 2px solid black;
+       border-radius: 10px ;
+    }
+
+    button{
+        margin-top: 20px;
+        background-color: lightcoral;
+width: 170px;
+height: 35px;
+border: 1px solid white;
+border-radius: 40px ;
+    }
+    .answerContainer{
+        display: flex;
+        flex-direction: row;
+        gap: 30px ;
+
+
+        .box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            button{
+                margin-top: 20px;
+                background-color: lightcoral;
+        width: 120px;
+        height: 35px;
+        border: 1px solid white;
+        border-radius: 40px ;
+                
+            }
+
+            input{
+                margin-top: 10px;
+            }
+
+
+            
+        }
+
+        
+    }
+
+    .submitBtn{
+        margin-top : 30px;
+        background-color: lightcoral;
+        width: 150px;
+        height: 35px;
+        border: 1px solid white;
+        border-radius: 40px ;
+
+    }
+
+    .backbtn{
+        margin-top : 50px;
+        background-color: lightcoral;
+        width: 150px;
+        height: 35px;
+        border: 1px solid white;
+        border-radius: 40px ;
+    }
+
+
+}
