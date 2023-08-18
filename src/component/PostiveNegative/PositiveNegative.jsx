@@ -15,7 +15,7 @@ const PositiveNegative = () => {
   const [formData , setFormData] = useState({title : '', question: '', questionDesc : '', questionPic : null , option1Title: '', option1Input:null, option2Title: '', option2Input: null})
 
   const handleSubmit = () => {
-    const url = "https://localhost:5000/api/v1/addpositivenegative"
+    const url = "https://spandan-git-main-ketankapale8.vercel.app/api/v1/addpositivenegative"
     axios.post(url , formData  )
     
 

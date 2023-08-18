@@ -20,7 +20,7 @@ const BodyParts = () => {
 })
 
   const handleSubmit = () => {
-    const url = "http://localhost:5000/api/v1/addbodyparts"
+    const url = "https://spandan-git-main-ketankapale8.vercel.app/api/v1/addbodyparts"
     axios.post(url , formData)
 
   }
@@ -116,7 +116,7 @@ const BodyParts = () => {
 
    return (
     <div className='form'>
-      <h2>Positive Negative</h2>
+      <h2>Body Parts</h2>
 
       <div className="title">Heading</div>
       <textarea onChange={(e)=> setFormData({...formData  , title : e.target.value})}/>

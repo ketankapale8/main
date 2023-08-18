@@ -38,7 +38,7 @@ const Home = () => {
     {
       
       title : "Disease",
-      link : "/Disease"
+      link : "/diseases"
     
   }
 

@@ -18,7 +18,7 @@ function App() {
           <Route path='/positive-negative' element={<PositiveNegative/>} />
           <Route path='/nadi' element={<Nadi/>} />
           <Route path='/vaastu' element={<Vaastu/>} />
-          <Route path='/bodyparts' element={<BodyParts/>} />
+          <Route path='/body-parts' element={<BodyParts/>} />
           <Route path='/diseases' element={<Diseases/>} />
           <Route path='/chakra' element={<Chakra/>} />
 

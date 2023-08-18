@@ -20,7 +20,7 @@ const Chakra = () => {
 })
 
   const handleSubmit = () => {
-    const url = "http://localhost:5000/api/v1/addvaastu"
+    const url = "https://spandan-git-main-ketankapale8.vercel.app/api/v1/addchakra"
     axios.post(url , formData)
 
   }
@@ -116,7 +116,7 @@ const Chakra = () => {
 
    return (
     <div className='form'>
-      <h2>Positive Negative</h2>
+      <h2>Chakra</h2>
 
       <div className="title">Heading</div>
       <textarea onChange={(e)=> setFormData({...formData  , title : e.target.value})}/>
